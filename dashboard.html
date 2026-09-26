@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PXPANEL • Dashboard</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="backdrop"></div>
+<header class="top glass">
+  <div class="brand"><span>PX</span><b>PXPANEL</b></div>
+  <nav><a href="/dashboard">داشبورد</a><a href="/configs">کانفیگ‌ها</a><button id="logout">خروج</button></nav>
+</header>
+<main class="container">
+  <section class="hero glass"><h1>داشبورد</h1><p>مرکز مدیریت PXPANEL Node V1</p></section>
+  <section class="stats">
+    <article class="glass stat"><small>کل کانفیگ‌ها</small><strong id="total">0</strong></article>
+    <article class="glass stat"><small>فعال</small><strong id="active">0</strong></article>
+    <article class="glass stat"><small>ترافیک ثبت‌شده</small><strong id="traffic">0 MB</strong></article>
+    <article class="glass stat"><small>آپتایم</small><strong id="uptime">0s</strong></article>
+  </section>
+</main>
+<script src="/js/dashboard.js"></script>
+</body>
+</html>

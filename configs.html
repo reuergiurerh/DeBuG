@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PXPANEL • Configs</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="backdrop"></div>
+<header class="top glass">
+  <div class="brand"><span>PX</span><b>PXPANEL</b></div>
+  <nav><a href="/dashboard">داشبورد</a><a href="/configs">کانفیگ‌ها</a></nav>
+</header>
+<main class="container">
+<section class="glass panel">
+<h1>کانفیگ‌ها</h1>
+<form id="configForm" class="form-grid">
+<input name="name" placeholder="نام کانفیگ" required>
+<select name="protocol"><option>VLESS</option><option>VMess</option><option>Trojan</option><option>Shadowsocks</option></select>
+<input name="address" placeholder="دامنه / IP">
+<input name="port" type="number" value="443" min="1" max="65535">
+<input name="expiry" type="datetime-local">
+<button type="submit">ساخت کانفیگ</button>
+</form>
+</section>
+<section class="glass panel">
+<h2>لیست کانفیگ‌ها</h2>
+<div id="list"></div>
+</section>
+</main>
+<script src="/js/configs.js"></script>
+</body>
+</html>
